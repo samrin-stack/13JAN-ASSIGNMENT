@@ -1,0 +1,141 @@
+class hello{
+    int length;
+    int breadth;
+
+    public hello()
+    { //this(10);
+        int length = 0;
+        int breadth = 0;
+
+    }
+
+    public hello(int lenght)
+    {//this(5,8);
+        this.length = 4 ;
+         breadth = 5;
+
+    }
+    public hello(int length,int breadth)
+    {
+        this.length = 7;
+        this.breadth = 8;
+    }
+    public void  m1()
+    {
+        System.out.println(length*breadth);
+    }
+}
+public class Recatangle8 {
+    public static void main(String[] args) {
+        hello obj = new hello();
+        obj.m1();
+        hello obj1= new hello(10);
+        obj1.m1();
+        hello obj2 = new hello(12,2);
+        obj2.m1();
+
+
+    }
+}
+// SECOND QUESTION
+import java.util.Scanner;
+
+class tri{
+     String ss;
+    String name ;
+    public tri(String ss)
+    {
+        name = ss;
+    }
+    public tri(){
+        name = "I love programming languages ";
+    }
+        }
+
+public class Programming {
+    public static void main(String[] args) {
+        tri obj = new tri();
+        obj.ss = "Java";
+        System.out.println("I love " + obj.ss);
+        System.out.println(obj.name);
+
+    }
+}
+
+// THIRD QUESTION
+#include <iostream>
+using namespace std;
+
+class Area
+{
+public:
+    void output(int l, int b)
+    {
+        cout<<"Area of Rectangle is = "<<l*b<<endl;
+    }
+
+    void output(int a)
+    {
+        cout<<"Area of Square is = "<<a*a<< endl;
+    }
+};
+
+int main()
+{
+    Area obj;
+    obj.output(5,6);
+    obj.output(5);
+}  
+
+// FFOURTH QUESTION
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+
+
+
+class IntegerI{
+private:
+	int i;
+public:
+	IntegerI(int i){
+		this->i=i;
+	}
+
+
+	void printNum(){
+		cout<<"i = "<<i<<"\n";
+	}
+};
+
+
+class IntegerJ:public IntegerI{
+private:
+	int j;
+public:
+	IntegerJ(int i,int j):IntegerI(i){
+		this->j=j;
+	}
+
+
+	void printNum(){
+		IntegerI::printNum();
+		cout<<"j = "<<j<<"\n";
+	}
+};
+
+
+int main() {
+	IntegerJ integerJ(5,6);
+	integerJ.printNum();
+
+
+
+
+	system("pause");
+	return 0;
+}
